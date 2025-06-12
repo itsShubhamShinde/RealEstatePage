@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            height: 100vh;
+            background: url('./img/house.webp') center/cover no-repeat;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .overlap-section {
+            margin-top: -100px;
+            background: #fff;
+            padding: 60px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            position: relative;
+        }
+
+        .hover-effect:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #155724;
+            /* deep green */
+            color: #f8f9fa;
+            /* soft light text */
+        }
+
+        .footer a {
+            color: #d4edda;
+            /* light green */
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        .footer .footer-bottom {
+            background-color: #0b3c29;
+            /* darker green strip */
+            color: #d4edda;
+        }
+
+        .footer h5 {
+            color: #ffffff;
+        }
+
+        .footer input.form-control {
+            border-radius: 0;
+        }
+
+        .footer .btn-success {
+            background-color: #28a745;
+            border: none;
+        }
+
+        .footer .btn-success:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#">
+                <i class="bi bi-building me-2"></i>ChhatrapatiUdyog
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link active text-success" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative">
+        <div class="overlay d-flex justify-content-center align-items-center text-white text-center">
+            <div>
+                <h1 class="display-4 fw-bold text-warning">Chhatrapati Udyog Samuh</h1>
+                <p class="lead mb-3">Discover the dream home you'll love.</p>
+                <p class="h5 fst-italic">
+                    Live your dream, own your space — with <span class="text-info">Chhatrapati Udyog Samuh</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Overlapping Section -->
+    <section class="overlap-section container text-center">
+        <h2 class="fw-bold mb-3 text-primary">Introducing Shivshakti Nagar</h2>
+        <p class="text-muted">The Perfect Home for Every Family
+        </p>
+        <p class="fw-semibold fst-italic mt-4 text-success">
+            “Because every family deserves a place they can proudly call home.”
+        </p>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="py-5 bg-light" id="features">
+        <div class="container aline-item-center">
+            <h2 class="text-center fw-bold mb-5">Featured Property</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 shadow-sm border-0 property-card hover-effect">
+                        <img src="./img/bg1.webp" class="card-img-top" alt="Luxurious Villa"
+                            style="height: 180px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Emerald Heights Villa</h5>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-door-open-fill me-1 text-primary"></i> 2BHK Banglo
+                                <i class="bi bi-arrows-fullscreen ms-3 me-1 text-success"></i> 2000 sqft
+                            </p>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Hinjewadi Phase 2, Pune
+                            </p>
+                            <p class="text-success fw-bold mb-3">
+                                <i class="bi bi-currency-rupee me-1"></i>1.2 Crore onwards
+                            </p>
+                            <a href="#" class="btn btn-outline-success btn-sm w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 shadow-sm border-0 property-card hover-effect">
+                        <img src="./img/bg2.webp" class="card-img-top" alt="Skyline Residency"
+                            style="height: 180px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Skyline Residency</h5>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-door-open-fill me-1 text-primary"></i> 2BHK
+                                <i class="bi bi-arrows-fullscreen ms-3 me-1 text-success"></i> 1000 sqft
+                            </p>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Pune, Kharadi
+                            </p>
+                            <p class="text-success fw-bold mb-3">
+                                <i class="bi bi-currency-rupee me-1"></i>38 Lacs onwards
+                            </p>
+                            <a href="#" class="btn btn-outline-success btn-sm w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 shadow-sm border-0 property-card hover-effect">
+                        <img src="./img/bg3.webp" class="card-img-top" alt="Green Valley Enclave"
+                            style="height: 180px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Valley Enclave</h5>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-door-open-fill me-1 text-primary"></i> 2BHK
+                                <i class="bi bi-arrows-fullscreen ms-3 me-1 text-success"></i> 1000 sqft
+                            </p>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Nashik, Gangapur Road
+                            </p>
+                            <p class="text-success fw-bold mb-3">
+                                <i class="bi bi-currency-rupee me-1"></i>24 Lacs onwards
+                            </p>
+                            <a href="#" class="btn btn-outline-success btn-sm w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card h-100 shadow-sm border-0 property-card hover-effect">
+                        <img src="./img/bg5.jpg" class="card-img-top" alt="Palm Crest Residency"
+                            style="height: 180px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Palm Crest Residency</h5>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-door-open-fill me-1 text-primary"></i> 2BHK
+                                <i class="bi bi-arrows-fullscreen ms-3 me-1 text-success"></i> 1000 sqft
+                            </p>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-geo-alt-fill me-1 text-danger"></i> Pune, Hinjewadi Phase 3
+                            </p>
+                            <p class="text-success fw-bold mb-3">
+                                <i class="bi bi-currency-rupee me-1"></i>32 Lacs onwards
+                            </p>
+                            <a href="#" class="btn btn-outline-success btn-sm w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container text-center py-5" id="about">
+        <h2 class="fw-bold mb-3">Why Families Trust Shivshakti Nagar</h2>
+        <p class="text-muted mb-4">
+            Shivshakti Nagar isn’t just another housing project — it's a thoughtfully designed community where
+            middle-class families can achieve the dream of owning a secure, affordable, and peaceful home.
+        </p>
+
+        <div class="row text-start text-muted">
+            <div class="col-md-6 mb-3">
+                ✅ Affordable and secure housing for middle-class families
+            </div>
+            <div class="col-md-6 mb-3">
+                ✅ Prime location near top educational institutes and main roads
+            </div>
+            <div class="col-md-6 mb-3">
+                ✅ 24/7 water and electricity supply
+            </div>
+            <div class="col-md-6 mb-3">
+                ✅ Well-planned drainage and fully paved roads
+            </div>
+            <div class="col-md-6 mb-3">
+                ✅ Peaceful surroundings and green environment
+            </div>
+            <div class="col-md-6 mb-3">
+                ✅ Smartly engineered layout for comfort, convenience, and value
+            </div>
+        </div>
+
+        <p class="fw-semibold fst-italic mt-4 text-success">
+            “Because every family deserves a place they can proudly call home.”
+        </p>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <img src="./img/Patil.png" alt="Client" class="rounded-circle mb-3"
+                            style="height: 250px; width: 250px;">
+                        <p class="fst-italic">"The experience was smooth and professional!"</p>
+                        <footer class="blockquote-footer mt-2">Mr. Patil, First-Time Buyer</footer>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <img src="./img/Deshmuk.png" alt="Client" class="rounded-circle mb-3"
+                            style="height: 250px; width: 250px;">
+                        <p class="fst-italic">"Helpful support, great deals, and prime locations."</p>
+                        <footer class="blockquote-footer mt-2">Mrs. Deshmukh, Homeowner</footer>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100">
+                        <img src="./img/Kale.png" alt="Client" class="rounded-circle mb-3"
+                            style="height: 250px; width: 250px;">
+                        <p class="fst-italic">"Very satisfied with the service provided!"</p>
+                        <footer class="blockquote-footer mt-2">Mr. Kale, Investor</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5" id="contact">
+        <div class="container">
+            <div class="row">
+
+                <!-- Contact Information -->
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p class="mb-1">📍 Shivshakti Nagar Project Office</p>
+                    <p class="mb-1">📞 +91 98765 43210</p>
+                    <p class="mb-1">✉️ info@shivshaktinagar.com</p>
+                    <p>Open: Mon – Sat, 10 AM to 6 PM</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About the Project</a></li>
+                        <li><a href="#properties">Available Plots</a></li>
+                        <li><a href="#testimonials">Client Testimonials</a></li>
+                        <li><a href="#contact">Book a Site Visit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="col-md-4 mb-4">
+                    <h5>Newsletter Signup</h5>
+                    <p>Stay updated with our latest offers and project updates.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-success" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center py-3 mt-4">
+            <p class="mb-0">&copy; 2025 Chhatrapati Udyog Samuh.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
